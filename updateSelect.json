@@ -1,0 +1,39 @@
+{
+
+"jaipur":[
+{
+"cscheme" :[{"name":"lmb","address":"add5","menu":[{"dish":"dal","price":"100"},{"dish":"butter","price":"100"}]}]
+
+},
+{
+"malviyanagar":[{"name":"taj","address":"add6"}]
+}
+],
+
+"bangalore":[
+{
+"domlur" : [{"name":"shanti sagar","address":"add1","menu":[{"dish":"aaloo","price":"120"},{"dish":"bhindi","price":"200"}]},{"name":"sukh sagar","address":"add2"}]
+},
+{
+"hsr" : [{"name":"bhagini","address":"add3"},{"name":"hotel4","address":"add4"}]
+},
+{
+"koramangla" : [{"name":"abc","address":"add5"},{"name":"hotel5","address":"add6"}]
+}
+],
+
+
+"delhi":[
+{
+"vasant vihar" :[{"name":"hh1","address":"addh1","menu":[{"dish":"dal","price":"100"},{"dish":"butter","price":"100"}]}]
+
+},
+{
+"adarsh nagar":[{"name":"hh3","address":"addh2"}]
+}
+]
+
+
+
+
+}
