@@ -45,7 +45,7 @@ function errorFunction(){
             }
         }
         //city data
-        alert(city.long_name)
+       
 document.getElementById("city1").innerHTML=city.long_name;
 
         } else {
