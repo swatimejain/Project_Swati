@@ -58,7 +58,7 @@ document.getElementById("city1").innerHTML=city.long_name;
     });
   }
 
-
+/*
 //local storage to store the selected city value of geo
   window.onload = function() {
 
@@ -107,7 +107,7 @@ document.getElementById("city1").innerHTML=city.long_name;
             $.cookie(this$.attr('city1'), this$.val(), { expires: 7 });
         });
 });
-  
+  */
   
 
 

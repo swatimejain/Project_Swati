@@ -1,24 +1,22 @@
-
 $(document).ready(function () {
     "use strict";
 
-    var selectData, $localres;
+    var selectData, $states;
 
     function updateSelects() {
         var cities = $.map(selectData[this.value], function (city) {
             return $("<option />").text(city);
         });
-        $("#locality").empty().append(cities);
+        $("#city_names").empty().append(cities);
     }
 
     $.getJSON("updateSelect.json", function (data) {
-        var city;
+        var state;
         selectData = data;
-        $localres = $("#city").on("change", updateSelects);
-        for (city in selectData) {
-            $("<option />").text(city).appendTo($localres);
+        $states = $("#us_states").on("change", updateSelects);
+        for (state in selectData) {
+            $("<option />").text(state).appendTo($states);
         }
-        $localres.change();
+        $states.change();
     });
 });
-
