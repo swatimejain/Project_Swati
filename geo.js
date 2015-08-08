@@ -58,42 +58,60 @@ document.getElementById("city1").innerHTML=city.long_name;
     });
   }
 
-  
+
+//local storage to store the selected city value of geo
   window.onload = function() {
 
   // Check for LocalStorage support.
   if (localStorage) {
 
     // Add an event listener for form submissions
-    document.getElementById('contactForm').addEventListener('submit', function() {
+    document.getElementById('city1').addEventListener('change', function()  {
       // Get the value of the name field.
-      var name = document.getElementById('name').value;
+      var city1 = document.getElementById('city1').value;
 
       // Save the name in localStorage.
-      localStorage.setItem('name', name);
+      localStorage.setItem('city1', city1);
 	  
 	  
 	  
 	  
   // Retrieve the users name.
-  var name = localStorage.getItem('name');
+ var names = localStorage.getItem('city1');
 
-  if (name != "undefined" || name != "null") {
-    document.getElementById('welcomeMessage').innerHTML = "Hello " + name + "!";
-  } else
-    document.getElementById('welcomeMessage').innerHTML = "Hello!";
+  if (names != "undefined" || names != "null") {
+   document.getElementById('city1').innerHTML = "Hello " + names + "!";
+ } else
+   document.getElementById('city1').innerHTML = "Hello!";
 
 
 
-localStorage.removeItem('name');
-localStorage.clear();
     });
 
   }
+  }
+  
+  //set cookie
+   
+           $(function() {
+   
+        // reading selected values from cookies
+		 $("#city1").on("change", function() {
+        
+            var this$ = $(this);
+            this$.onchange($.cookie(this$.attr('')));
+        })
+        // saving selected value in cookie
+        .change(function() {
+            var this$ = $(this);
+            $.cookie(this$.attr('city1'), this$.val(), { expires: 7 });
+        });
+});
+  
+  
 
-}
-  
-  
+
+
   
   
   
