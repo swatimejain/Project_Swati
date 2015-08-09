@@ -24,6 +24,7 @@ $(document).ready(function () {
 	$.getJSON('hotel.json', function (data) {
 		var output = '<ul>';
 		
+		if((document.getElementById("us_states").value == 'jaipur')&&(document.getElementById("city_names").value == 'banipark')){
 		
 		$.each(data.banipark, function (key, val) {
 			output +=  '<li>' + val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>' +'</li>';
@@ -31,7 +32,7 @@ $(document).ready(function () {
 		output += '</ul>';
 		$('#hotel').html(output); 	// replace all existing content
 		
-
+		}
 		
 	});
 	
