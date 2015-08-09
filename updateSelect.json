@@ -1,9 +1,9 @@
 {
     
     "jaipur": [
-        "bani park",
+        "banipark",
         
-        "c scheme"
+        "cscheme"
     ],
 	"bangalore": [
         "marathahalli",
@@ -11,8 +11,10 @@
 		"whitefield"
     ],
     "delhi": [
-        "ashok nagar",
+        "ashoknagar",
         
-        "vasant vihar"
+        "vasantvihar"
     ]
+	
 }
+

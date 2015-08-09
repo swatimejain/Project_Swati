@@ -19,4 +19,24 @@ $(document).ready(function () {
         }
         $states.change();
     });
+	
+	$("button").click(function(){
+	$.getJSON('hotel.json', function (data) {
+		var output = '<ul>';
+		
+		
+		$.each(data.banipark, function (key, val) {
+			output +=  '<li>' + val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>' +'</li>';
+		});
+		output += '</ul>';
+		$('#hotel').html(output); 	// replace all existing content
+		
+
+		
+	});
+	
+	});
+	
+	
 });
+

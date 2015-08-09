@@ -1,0 +1,19 @@
+{
+ "banipark" :[
+    {"hotelname": "LMB", "url": "www.google.com"},
+    {"display": "Milk chocolate", "value": "milkchocolate" },
+    {"display": "White chocolate", "value": "whitechocolate" },
+    {"display": "Gianduja chocolate", "value": "giandujachocolate" }],
+   
+ "vegetables" : [
+    {"display": "Broccoli", "value": "broccoli" },
+    {"display": "Cabbage", "value": "cabbage" },
+    {"display": "Carrot", "value": "carrot" },
+    {"display": "Cauliflower", "value": "cauliflower" }],
+   
+   "icecreams" : [
+    {"display": "Frozen yogurt", "value": "frozenyogurt" },
+    {"display": "Booza", "value": "booza" },
+    {"display": "Frozen yogurt", "value": "frozenyogurt" },
+    {"display": "Ice milk", "value": "icemilk" }]
+}
