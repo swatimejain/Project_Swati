@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body onLoad="get();">
+
+  
+ 
+<script type="text/javascript">
+	
+function get(){
+ 
+
+
+	document.write(" <h4> Recently  Searched :- </h4>");
+for(var i=0; i<localStorage.length; i++) {
+	
+    var key = localStorage.key(i);
+    var value = localStorage[key];
+    document.write('<br> ' + key + " => " + value + ' <br>');
+	
+}
+
+}
+
+</script>
+
+</body>
+
+
+  </html>

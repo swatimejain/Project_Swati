@@ -1,0 +1,30 @@
+<html>
+<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    var text1 = $('#text1').val();
+                    var text2 = $('#text2').val();
+                    $.cookie('text1', text1);
+                    $.cookie('text2', text2);
+                });
+                checkCookieValues();
+            });
+            function checkCookieValues(){
+                if ($.cookie('text1')!=="undefined") {
+                    $('#text1').val($.cookie('text1'));
+                }
+                if ($.cookie('text2')!=="undefined") {
+                    $('#text2').val($.cookie('text2'));
+                }
+            }
+        </script>
+        <form name="trial" id="trial">
+            <input type="text" value="" id="text1" name="text1"/>
+            <input type="text" value="" id="text2" name="text2"/>
+            <input type="submit" value="btn" id="btn"/>
+        </form>
+    </body>
+	
+	</html>

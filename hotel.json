@@ -1,19 +1,32 @@
 {
- "banipark" :[
-    {"hotelname": "LMB", "url": "www.google.com"},
-    {"display": "Milk chocolate", "value": "milkchocolate" },
-    {"display": "White chocolate", "value": "whitechocolate" },
-    {"display": "Gianduja chocolate", "value": "giandujachocolate" }],
+ "amer" :[
+    {"hotelname": "rajpalace", "url": "http://www.rajpalace.com/contact-raj-palace.html"}
    
- "vegetables" : [
-    {"display": "Broccoli", "value": "broccoli" },
-    {"display": "Cabbage", "value": "cabbage" },
-    {"display": "Carrot", "value": "carrot" },
-    {"display": "Cauliflower", "value": "cauliflower" }],
+
+    ],
    
-   "icecreams" : [
-    {"display": "Frozen yogurt", "value": "frozenyogurt" },
-    {"display": "Booza", "value": "booza" },
-    {"display": "Frozen yogurt", "value": "frozenyogurt" },
-    {"display": "Ice milk", "value": "icemilk" }]
+ "miroad" : [
+    {"hotelname": "chanakya", "url": "http://leisureinngrandchanakya.in/contact/" }
+   
+  ],
+   
+   "marathahalli" : [
+    {"hotelname": "jalsa", "url": "http://jalsa.co.in/marathahalli" },
+    {"hotelname": "aab", "url": "http://www.aabresidency.com/index.php" }
+    ],
+	
+	
+	"hsr" : [
+    {"hotelname": "empire", "url": "http://hotelempire.in/" }
+ 
+    ],
+	
+	
+	"vasantvihar" : [
+    {"hotelname": "jaypee", "url": "http://www.jaypeehotels.com/contact-us" }
+ 
+    ]
+	
+	
+	
 }

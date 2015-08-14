@@ -22,22 +22,78 @@ $(document).ready(function () {
 	
 	$("button").click(function(){
 	$.getJSON('hotel.json', function (data) {
-		var output = '<ul>';
 		
-		if((document.getElementById("us_states").value == 'jaipur')&&(document.getElementById("city_names").value == 'banipark')){
 		
-		$.each(data.banipark, function (key, val) {
-			output +=  '<li>' + val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>' +'</li>';
+		if((document.getElementById("us_states").value == 'jaipur')&&(document.getElementById("city_names").value == 'amer')){
+		var output = '<p>';
+		$.each(data.amer, function (key, val) {
+			output +=  val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>';
+				
+		output += '</p>';
+		$('#hotel').html(output); 
 		});
-		output += '</ul>';
-		$('#hotel').html(output); 	// replace all existing content
-		
+			// replace all existing content
 		}
 		
+		if((document.getElementById("us_states").value == 'jaipur')&&(document.getElementById("city_names").value == 'miroad')){
+		var output = '<p>';
+		$.each(data.miroad, function (key, val) {
+			output += val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>';
+				
+		output += '</p>';
+		$('#hotel').html(output); 
+		});
+			// replace all existing content
+		}
+		
+		
+		if((document.getElementById("us_states").value == 'bangalore')&&(document.getElementById("city_names").value == 'marathahalli')){
+		var output = '<p>';
+		$.each(data.marathahalli, function (key, val) {
+			output +=   val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>' ;
+				
+		output += '</p>';
+		$('#hotel').html(output); 
+		});
+			// replace all existing content
+		}
+		
+		
+		
+		if((document.getElementById("us_states").value == 'bangalore')&&(document.getElementById("city_names").value == 'hsr')){
+		var output = '<p>';
+		$.each(data.hsr, function (key, val) {
+			output += val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>' ;
+				
+		output += '</p>';
+		$('#hotel').html(output); 
+		});
+			// replace all existing content
+		}
+		
+		
+		
+		if((document.getElementById("us_states").value == 'delhi')&&(document.getElementById("city_names").value == 'vasantvihar')){
+		var output = '<p>';
+		$.each(data.vasantvihar, function (key, val) {
+			output +=  val.hotelname +  '<br>Click down for more details<br>'  + '<a href=" '+ val.url + ' ">'+  val.url + '</a>';
+				
+		output += '</p>';
+		$('#hotel').html(output); 
+		});
+			// replace all existing content
+		}
+		
+		
+		
+		
+		
+		
+		});
 	});
-	
-	});
-	
-	
+
 });
+
+
+
 

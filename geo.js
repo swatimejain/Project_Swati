@@ -1,7 +1,5 @@
 
-
-
-  var geocoder;
+ var geocoder;
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
@@ -11,6 +9,7 @@ function successFunction(position) {
     var lat = position.coords.latitude;
     var lng = position.coords.longitude;
     codeLatLng(lat, lng)
+	
 }
 
 function errorFunction(){
@@ -48,6 +47,22 @@ function errorFunction(){
        
 document.getElementById("city1").innerHTML=city.long_name;
 
+
+
+   // var kid = document.getElementById("city1");
+
+    //localStorage.setItem("city", kid.value);
+
+
+
+ 
+  // var  one = localStorage.getItem("kidStore");
+	//document.getElementById('city1').innerHTML +=one;
+
+	
+	
+	
+	
         } else {
           alert("No results found");
         }
@@ -56,58 +71,42 @@ document.getElementById("city1").innerHTML=city.long_name;
       }
 	  
     });
-  }
-
-/*
-//local storage to store the selected city value of geo
-  window.onload = function() {
-
-  // Check for LocalStorage support.
-  if (localStorage) {
-
-    // Add an event listener for form submissions
-    document.getElementById('city1').addEventListener('change', function()  {
-      // Get the value of the name field.
-      var city1 = document.getElementById('city1').value;
-
-      // Save the name in localStorage.
-      localStorage.setItem('city1', city1);
-	  
-	  
-	  
-	  
-  // Retrieve the users name.
- var names = localStorage.getItem('city1');
-
-  if (names != "undefined" || names != "null") {
-   document.getElementById('city1').innerHTML = "Hello " + names + "!";
- } else
-   document.getElementById('city1').innerHTML = "Hello!";
+	
 
 
 
-    });
+ }
 
-  }
-  }
   
-  //set cookie
-   
-           $(function() {
-   
-        // reading selected values from cookies
-		 $("#city1").on("change", function() {
-        
-            var this$ = $(this);
-            this$.onchange($.cookie(this$.attr('')));
-        })
-        // saving selected value in cookie
-        .change(function() {
-            var this$ = $(this);
-            $.cookie(this$.attr('city1'), this$.val(), { expires: 7 });
-        });
-});
-  */
+  
+function SaveItem() {
+			
+
+	
+		var kidc = document.getElementById("us_states");
+
+    localStorage.setItem("citys", kidc.value);
+
+	
+	var kida = document.getElementById("city_names");
+
+    localStorage.setItem("area", kida.value);
+	
+
+	
+	
+}
+
+
+
+
+
+	
+              
+
+
+
+
   
 
 

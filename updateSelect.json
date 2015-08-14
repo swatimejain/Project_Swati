@@ -1,17 +1,17 @@
 {
     
     "jaipur": [
-        "banipark",
+        "amer",
         
-        "cscheme"
+        "miroad"
     ],
 	"bangalore": [
         "marathahalli",
-        "hsr",
-		"whitefield"
+        "hsr"
+		
     ],
     "delhi": [
-        "ashoknagar",
+   
         
         "vasantvihar"
     ]

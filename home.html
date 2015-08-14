@@ -3,9 +3,9 @@
 <head>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/> 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
-    <title></title>
-	    	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <title>FindResto</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-history/1.9/jquery.history.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 	<script src="geo.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -14,19 +14,22 @@
 	<link rel="stylesheet" href="home.css">
 </head>
 <body onload="initialize()">
+
 <h1>Search</h1>
 <div>
 <div class="select">
 <br><br>
  Select City:-<select id="us_states"><option id="city1"></option></select><br><br>
  Select Area:-   <select id="city_names"></select><br><br>
-	<button onclick="">Search</button>
+	<button type="submit" onclick="SaveItem();" >Search</button>
+
+	
     <script type="text/javascript" src="updateSelect.js"></script>
 	
 </div>
 
-<div class="hotel" id="hotel">
-Show hotel
+<div class="hotel1" id="hotel">
+<p id="hotel"></p>
 
 </div>	
 
@@ -36,7 +39,7 @@ Show hotel
 
 
 <footer>
-
+<a href="main.html">back</a>
 <p>&copy; 2015 FindResto.All rights reserved.</p>
 </footer>
 </body>
