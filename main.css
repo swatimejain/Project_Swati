@@ -1,3 +1,13 @@
-footer{margin-top:480px;color:blue;}
-h1{color:blue;}
-nav ul li{display:inline;padding:10px;}
+footer{margin-top:480px;color:yellow;}
+h1{color:yellow;}
+nav ul li{display:inline;padding:10px;color:yellow;}
+	a{color:yellow;}
+
+body {
+background-image: url(images/mainb.png); /*You will specify your image path here.*/
+
+background-size:100% 100%;
+background-position: top center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+}
