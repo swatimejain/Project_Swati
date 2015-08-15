@@ -43,12 +43,12 @@
 			
 			<div class="left">
 				<!-- Login Form -->
-				<form class="clearfix" action="#" method="post">
+				<form class="clearfix" action="" method="post" onsubmit="return login(this);" id="signont">
 					<h1>Member Login</h1>
 					<label class="grey" for="log">Username:</label>
-					<input class="field" type="text" name="log" id="log" value="" size="23" />
+					<input class="field" type="text" name="log" id="log" id="usernamet" value="" size="23" />
 					<label class="grey" for="pwd">Password:</label>
-					<input class="field" type="password" name="pwd" id="pwd" size="23" />
+					<input class="field" type="password" name="pwd" id="pwd" id="passwordt" size="23" />
 	            	<label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Remember me</label>
         			<div class="clear"></div>
 					<input type="submit" name="submit" value="Login" class="bt_login" />
@@ -57,10 +57,10 @@
 			</div>
 			<div class="left right">			
 				<!-- Register Form -->
-				<form action="#" method="post">
+				<form action="" method="post" onsubmit="return store(this);" id="registert">
 					<h1>Not a member yet? Sign Up!</h1>				
 					<label class="grey" for="signup">Username:</label>
-					<input class="field" type="text" name="signup" id="signup" value="" size="23" />
+					<input class="field" type="text" name="signup" id="signup" id="usernamet" value="" size="23" />
 					
 					<label class="grey" for="signup">Age</label>
 					<input class="field" name="signup" id="signup" value="" size="23" type="number" >
@@ -77,7 +77,7 @@
 					<label class="grey" for="email">Email:</label>
 					<input class="field" type="text" name="email" id="email" size="23" />
 					<label class="grey" for="email">Password:</label>
-					<input class="field" type="password" name="pass" id="pass" size="23" />
+					<input class="field" type="password" name="pass" id="pass" id="passwordt"size="23" />
 					<input type="submit" name="submit" value="Register" class="bt_register" />
 				</form>
 			</div>
@@ -103,7 +103,9 @@
 </div> <!--panel -->
 
 </div>
-<h3 >Log-in/Register here..</h3>
+<h3 >Log-in/Register here..</h3><br><br>
+
+  
   
 <footer>
 <a href="main.html">back</a>

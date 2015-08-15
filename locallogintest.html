@@ -1,0 +1,60 @@
+<html>
+<head>
+<script>
+function store(theForm) {
+    document.getElementById('welcomeMessage').innerHTML = "";
+    var inputUsername= theForm["username"];
+    var inputPassword= theForm["password"];
+    localStorage.setItem("username", inputUsername.value);
+    localStorage.setItem("password", inputPassword.value);
+    document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
+    return false;
+} 
+
+function login(theForm) {
+    document.getElementById('welcomeMessage').innerHTML = "";
+    var inputUsername = theForm["username"];
+    var inputPassword = theForm["password"];
+    var username = inputUsername.value;
+    var password = inputPassword.value;
+    if ((username == localStorage.getItem('username')) && (password == localStorage.getItem('password'))) {
+     document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
+      } else {
+     document.getElementById('welcomeMessage').innerHTML = "Invalid Log-in!";
+    }
+    return false;
+}
+
+</script>
+
+</head>
+<body>
+
+<div class="popup">
+<h2>Register</h2>
+<p>Please enter your details here</p>
+<form method="get" action="" onsubmit="return store(this);" id="register">
+<label for="email">User Name</label>
+<input type="text" id="username" placeholder="Select A User Name" required value="" /><br />
+<label for="pass">Password</label>
+<input type="password" id="password" placeholder="Select A Password" required value="" /><br />
+<input type="submit" value="Register" />
+</form>
+</div>
+<br />
+<div class="popup">
+<h2>Welcome Guest!</h2>
+<p>Please enter your login and password here</p>
+<form method="get" action="" onsubmit="return login(this);" id="signon">
+<label for="email">User Name </label>
+<input type="text" id="username" placeholder="Your Password" required value="" /><br />
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Your Password" required value="" /><br />
+<input type="submit" value="Log In" />
+</form>
+<a class="close" href="#close"></a>
+</div>
+<p id="welcomeMessage"></p>
+
+<body>
+</html>
